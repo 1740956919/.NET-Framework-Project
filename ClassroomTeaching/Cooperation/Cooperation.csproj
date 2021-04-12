@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A727FD0-445D-40E1-B4FB-4DA4C59780A0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LINDGE.PARA.Translayer.ClassroomTeaching.Cooperation.WebAPI</RootNamespace>
+    <AssemblyName>LINDGE.PARA.Translayer.ClassroomTeaching.Cooperation.WebAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Autofac.Configuration, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Configuration.3.3.0\lib\net40\Autofac.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentNHibernate.2.0.3.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA, Version=3.3.223.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.3.3.224.2047\Lib\Net45\LINDGE.PARA.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Avatar.Session, Version=1.2.202.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Avatar.Session.2.1.5.41\lib\Net45\LINDGE.PARA.Avatar.Session.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Data, Version=3.3.211.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Data.3.3.214.2028\lib\Net45\LINDGE.PARA.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Data.EF, Version=3.3.211.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Data.EF.MySql.3.3.218.2044\Lib\Net45\LINDGE.PARA.Data.EF.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Engine.Job, Version=1.4.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Engine.Job.1.7.12.53\Lib\Net45\LINDGE.PARA.Engine.Job.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Figure.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Figure.Base.1.5.0.2009\lib\Net45\LINDGE.PARA.Figure.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Fundamental.Avatar.Session.SDK, Version=2.0.32.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Fundamental.Avatar.Session.SDK.5.2.33.47\lib\Net45\LINDGE.PARA.Fundamental.Avatar.Session.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Fundamental.Figure.SDK, Version=1.2.201.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Fundamental.Figure.SDK.1.5.2.2012\lib\Net45\LINDGE.PARA.Fundamental.Figure.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Fundamental.Figure.WebAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Fundamental.Figure.SDK.1.5.2.2012\lib\Net45\LINDGE.PARA.Fundamental.Figure.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Fundamental.Message, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Fundamental.Message.WebAPI.5.3.0.1\Lib\Net45\LINDGE.PARA.Fundamental.Message.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Fundamental.Message.WebAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Fundamental.Message.WebAPI.5.3.0.1\Lib\Net45\LINDGE.PARA.Fundamental.Message.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Fundamental.Post, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Fundamental.Post.WebAPI.5.3.0.11\Lib\Net45\LINDGE.PARA.Fundamental.Post.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Fundamental.Post.WebAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Fundamental.Post.WebAPI.5.3.0.11\Lib\Net45\LINDGE.PARA.Fundamental.Post.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Fundamental.Runtime.CodeGenerate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Fundamental.CodeGenerate.5.2.0.1\Lib\Net45\LINDGE.PARA.Fundamental.Runtime.CodeGenerate.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Bank.Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Bank.Library.WebAPI.5.3.3.49\Lib\Net45\LINDGE.PARA.Generic.Bank.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Bank.Library.WebAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Bank.Library.WebAPI.5.3.3.49\Lib\Net45\LINDGE.PARA.Generic.Bank.Library.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Bank.Resource, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Bank.Resource.WebAPI.5.3.0.27\Lib\Net45\LINDGE.PARA.Generic.Bank.Resource.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Bank.Resource.WebAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Bank.Resource.WebAPI.5.3.0.27\Lib\Net45\LINDGE.PARA.Generic.Bank.Resource.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Active, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Active.5.2.0.1\Lib\Net45\LINDGE.PARA.Generic.Behavior.Active.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Active.SDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Active.SDK.5.2.0.5\Lib\Net45\LINDGE.PARA.Generic.Behavior.Active.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Collaboration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Collaboration.WebAPI.5.2.0.19\Lib\Net45\LINDGE.PARA.Generic.Behavior.Collaboration.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Collaboration.API.Basic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Collaboration.WebAPI.5.2.0.19\Lib\Net45\LINDGE.PARA.Generic.Behavior.Collaboration.API.Basic.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Collaboration.API.Query, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Collaboration.WebAPI.5.2.0.19\Lib\Net45\LINDGE.PARA.Generic.Behavior.Collaboration.API.Query.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Single, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Single.WebAPI.5.2.0.42\Lib\Net45\LINDGE.PARA.Generic.Behavior.Single.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Single.API.Basic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Single.WebAPI.5.2.0.42\Lib\Net45\LINDGE.PARA.Generic.Behavior.Single.API.Basic.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Single.API.Extension, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Single.WebAPI.5.2.0.42\Lib\Net45\LINDGE.PARA.Generic.Behavior.Single.API.Extension.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Single.API.Query, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Single.WebAPI.5.2.0.42\Lib\Net45\LINDGE.PARA.Generic.Behavior.Single.API.Query.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Workflow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Workflow.WebAPI.5.2.0.36\Lib\Net45\LINDGE.PARA.Generic.Behavior.Workflow.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Workflow.API.Basic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Workflow.WebAPI.5.2.0.36\Lib\Net45\LINDGE.PARA.Generic.Behavior.Workflow.API.Basic.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Behavior.Workflow.API.Query, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Behavior.Workflow.WebAPI.5.2.0.36\Lib\Net45\LINDGE.PARA.Generic.Behavior.Workflow.API.Query.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.ClassroomTeaching.Cooperation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.ClassroomTeaching.Cooperation.5.3.0.14\lib\Net45\LINDGE.PARA.Generic.ClassroomTeaching.Cooperation.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.ClassroomTeaching.Cooperation.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.ClassroomTeaching.Cooperation.5.3.0.14\lib\Net45\LINDGE.PARA.Generic.ClassroomTeaching.Cooperation.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.ClassroomTeaching.Lesson, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.ClassroomTeaching.Lesson.5.3.0.6\Lib\Net45\LINDGE.PARA.Generic.ClassroomTeaching.Lesson.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.ClassroomTeaching.Lesson.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.ClassroomTeaching.Lesson.5.3.0.6\Lib\Net45\LINDGE.PARA.Generic.ClassroomTeaching.Lesson.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.ClassroomTeaching.Scene, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.ClassroomTeaching.Scene.5.3.15.179\Lib\Net45\LINDGE.PARA.Generic.ClassroomTeaching.Scene.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.ClassroomTeaching.Scene.Service, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.ClassroomTeaching.Scene.5.3.15.179\Lib\Net45\LINDGE.PARA.Generic.ClassroomTeaching.Scene.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Directory, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Directory.5.3.4.7\Lib\Net45\LINDGE.PARA.Generic.Directory.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Directory.Server.WebAPI, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Directory.Server.WebAPI.5.3.4.7\Lib\Net45\LINDGE.PARA.Generic.Directory.Server.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Media.ChannelMaster, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Media.ChannelMaster.WebAPI.5.3.0.7\Lib\Net45\LINDGE.PARA.Generic.Media.ChannelMaster.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Media.ChannelMaster.WebAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Media.ChannelMaster.WebAPI.5.3.0.7\Lib\Net45\LINDGE.PARA.Generic.Media.ChannelMaster.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Register.Census, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Register.Census.WebAPI.5.2.1.13\Lib\Net45\LINDGE.PARA.Generic.Register.Census.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Register.Census.API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Register.Census.WebAPI.5.2.1.13\Lib\Net45\LINDGE.PARA.Generic.Register.Census.API.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Sociality.Discussion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Sociality.Discussion.WebAPI.5.3.1.39\Lib\Net45\LINDGE.PARA.Generic.Sociality.Discussion.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Sociality.Discussion.WebAPI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Sociality.Discussion.WebAPI.5.3.1.39\Lib\Net45\LINDGE.PARA.Generic.Sociality.Discussion.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Sociality.Group, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Sociality.Group.WebAPI.5.2.15.31\lib\Net45\LINDGE.PARA.Generic.Sociality.Group.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Sociality.Group.API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Sociality.Group.WebAPI.5.2.15.31\lib\Net45\LINDGE.PARA.Generic.Sociality.Group.API.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Sociality.User, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Sociality.User.WebAPI.5.3.0.8\Lib\Net45\LINDGE.PARA.Generic.Sociality.User.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Sociality.User.API.Logon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Sociality.User.WebAPI.5.3.0.8\Lib\Net45\LINDGE.PARA.Generic.Sociality.User.API.Logon.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Sociality.User.API.Profile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Sociality.User.WebAPI.5.3.0.8\Lib\Net45\LINDGE.PARA.Generic.Sociality.User.API.Profile.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Sociality.User.API.Security, Version=1.1.32.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Sociality.User.WebAPI.5.3.0.8\Lib\Net45\LINDGE.PARA.Generic.Sociality.User.API.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.Sociality.User.API.Subscribe, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.Sociality.User.WebAPI.5.3.0.8\Lib\Net45\LINDGE.PARA.Generic.Sociality.User.API.Subscribe.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.TeachingSpace, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.TeachingSpace.WebAPI.5.3.17.51\Lib\Net45\LINDGE.PARA.Generic.TeachingSpace.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.TeachingSpace.Score, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.TeachingSpace.Score.5.3.17.29\Lib\Net45\LINDGE.PARA.Generic.TeachingSpace.Score.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.TeachingSpace.ScoreDataSource, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.TeachingSpace.ScoreDataSource.5.3.17.30\Lib\Net45\LINDGE.PARA.Generic.TeachingSpace.ScoreDataSource.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Generic.TeachingSpace.WebAPI, Version=5.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Generic.TeachingSpace.WebAPI.5.3.17.51\Lib\Net45\LINDGE.PARA.Generic.TeachingSpace.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.GenericUpdate.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.GenericUpdate.Base.1.0.0.2\Lib\Net45\LINDGE.PARA.GenericUpdate.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Http.Extension, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Http.Extension.1.0.1.2\lib\Net45\LINDGE.PARA.Http.Extension.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Query.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Query.Base.1.0.3.12\Lib\Net45\LINDGE.PARA.Query.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Runtime, Version=3.3.211.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Runtime.3.3.224.2037\lib\Net45\LINDGE.PARA.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Runtime.GlobalConst, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Runtime.GlobalConst.1.0.8.22\lib\Net45\LINDGE.PARA.Runtime.GlobalConst.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Runtime.SingleUserIdentity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Runtime.SingleUserIdentity.1.2.0.17\lib\Net45\LINDGE.PARA.Runtime.SingleUserIdentity.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Runtime.SingleUserIdentity.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Runtime.SingleUserIdentity.Service.1.2.0.17\lib\Net45\LINDGE.PARA.Runtime.SingleUserIdentity.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Runtime.UnifyIdentity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Runtime.UnifyIdentity.1.1.0.4\lib\Net45\LINDGE.PARA.Runtime.UnifyIdentity.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Runtime.UnifyIdentity.Service, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Runtime.UnifyIdentity.Service.MySql.1.1.0.36\Lib\Net45\LINDGE.PARA.Runtime.UnifyIdentity.Service.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Runtime.WebAPI, Version=3.3.214.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Runtime.WebAPI.3.3.218.2038\lib\Net45\LINDGE.PARA.Runtime.WebAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Storage.LightingTable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Storage.LightingTable.1.0.3.7\lib\Net45\LINDGE.PARA.Storage.LightingTable.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Storage.LightingTable.NHibernate4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Storage.LightingTable.NHibernate.MySql.1.0.4.17\lib\Net45\LINDGE.PARA.Storage.LightingTable.NHibernate4.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.PARA.Storage.Redis.Connection, Version=2.0.3.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.PARA.Storage.Redis.Connection.2.0.3.0\lib\Net45\LINDGE.PARA.Storage.Redis.Connection.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.Proxy, Version=2.1.101.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.Proxy.2.2.114.2002\lib\Net40\LINDGE.Proxy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LINDGE.Proxy.WebAPIClient, Version=2.1.101.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.Proxy.WebAPIClient.2.2.124.2015\lib\Net40\LINDGE.Proxy.WebAPIClient.dll</HintPath>
+    </Reference>
+    <Reference Include="LINDGE.Serialization, Version=4.0.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LINDGE.Serialization.4.0.21.132\lib\Net40\LINDGE.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.8\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.8\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=4.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.4.1.0.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.0.316.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.1.0.488\lib\net45\StackExchange.Redis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0.2\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\AppConfig.xml" />
+    <None Include="packages.config" />
+    <Content Include="App_Data\System.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\ServiceContext.cs" />
+    <Compile Include="Const\BehaviorActionNames.cs" />
+    <Compile Include="Const\ErrorCodes.cs" />
+    <Compile Include="Controllers\FileDownloadController.cs" />
+    <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
+    <Compile Include="Controllers\MessageQueryController.cs" />
+    <Compile Include="Controllers\ResetController.cs" />
+    <Compile Include="Controllers\StateController.cs" />
+    <Compile Include="Controllers\TraceController.cs" />
+    <Compile Include="CooperationConfigSection.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ICooperationService.cs" />
+    <Compile Include="Param\DiscussionChairParam.cs" />
+    <Compile Include="Param\MessageQueryParam.cs" />
+    <Compile Include="Param\MessageSendParam.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceModule.cs" />
+    <Compile Include="Service\CooperationService.cs" />
+    <Compile Include="Struct\AuthorInfo.cs" />
+    <Compile Include="Struct\CooperationStatus.cs" />
+    <Compile Include="Struct\DiscussionMemberInfo.cs" />
+    <Compile Include="Struct\FileDownloadResult.cs" />
+    <Compile Include="Struct\FileInfo.cs" />
+    <Compile Include="Struct\GroupMemberInfo.cs" />
+    <Compile Include="Struct\HistoryMessageInfo.cs" />
+    <Compile Include="Struct\MessageInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Result\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51338/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

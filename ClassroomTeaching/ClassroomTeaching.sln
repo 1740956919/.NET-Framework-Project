@@ -1,0 +1,132 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interaction", "Interaction\Interaction.csproj", "{18C17BED-5276-4D12-91D9-A28063A8F27C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz", "Quiz\Quiz.csproj", "{25928DAF-136E-4150-A06D-3E087B9CBEC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Callback", "Callback", "{8E7784FE-B147-42D2-91AB-D52F84CF23DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "Callback\Base\Base.csproj", "{874E0D64-FB11-47D5-A588-B440CA3F24CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "Callback\WebAPI\WebAPI.csproj", "{8B71BF55-A574-4847-818B-5780216E644B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Screen", "Screen\Screen.csproj", "{C30881B8-124F-46CE-BEDA-E7EA60E8CE87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discussion", "Discussion\Discussion.csproj", "{360D4A48-5E56-4382-91A3-C26251A4C3EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooperation", "Cooperation\Cooperation.csproj", "{2A727FD0-445D-40E1-B4FB-4DA4C59780A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brainstorming", "Brainstorming\Brainstorming.csproj", "{42BEA3F3-2589-40BC-A668-590232D64487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authorization", "Authorization\Authorization.csproj", "{EDEACFE2-63F4-4693-8FE4-57E5C29D8512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LessonReport", "LessonReport\LessonReport.csproj", "{32D28FBF-205D-4E50-8258-141B62341474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom", "Custom\Custom.csproj", "{6B5512DD-E9CD-4E9A-A679-46C7EBDE834F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18C17BED-5276-4D12-91D9-A28063A8F27C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C17BED-5276-4D12-91D9-A28063A8F27C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C17BED-5276-4D12-91D9-A28063A8F27C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C17BED-5276-4D12-91D9-A28063A8F27C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25928DAF-136E-4150-A06D-3E087B9CBEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25928DAF-136E-4150-A06D-3E087B9CBEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25928DAF-136E-4150-A06D-3E087B9CBEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25928DAF-136E-4150-A06D-3E087B9CBEC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874E0D64-FB11-47D5-A588-B440CA3F24CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874E0D64-FB11-47D5-A588-B440CA3F24CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874E0D64-FB11-47D5-A588-B440CA3F24CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874E0D64-FB11-47D5-A588-B440CA3F24CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B71BF55-A574-4847-818B-5780216E644B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B71BF55-A574-4847-818B-5780216E644B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B71BF55-A574-4847-818B-5780216E644B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B71BF55-A574-4847-818B-5780216E644B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C30881B8-124F-46CE-BEDA-E7EA60E8CE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C30881B8-124F-46CE-BEDA-E7EA60E8CE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C30881B8-124F-46CE-BEDA-E7EA60E8CE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C30881B8-124F-46CE-BEDA-E7EA60E8CE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{360D4A48-5E56-4382-91A3-C26251A4C3EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{360D4A48-5E56-4382-91A3-C26251A4C3EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{360D4A48-5E56-4382-91A3-C26251A4C3EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{360D4A48-5E56-4382-91A3-C26251A4C3EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A727FD0-445D-40E1-B4FB-4DA4C59780A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A727FD0-445D-40E1-B4FB-4DA4C59780A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A727FD0-445D-40E1-B4FB-4DA4C59780A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A727FD0-445D-40E1-B4FB-4DA4C59780A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42BEA3F3-2589-40BC-A668-590232D64487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BEA3F3-2589-40BC-A668-590232D64487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BEA3F3-2589-40BC-A668-590232D64487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BEA3F3-2589-40BC-A668-590232D64487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDEACFE2-63F4-4693-8FE4-57E5C29D8512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDEACFE2-63F4-4693-8FE4-57E5C29D8512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDEACFE2-63F4-4693-8FE4-57E5C29D8512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDEACFE2-63F4-4693-8FE4-57E5C29D8512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D28FBF-205D-4E50-8258-141B62341474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D28FBF-205D-4E50-8258-141B62341474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D28FBF-205D-4E50-8258-141B62341474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D28FBF-205D-4E50-8258-141B62341474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5512DD-E9CD-4E9A-A679-46C7EBDE834F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5512DD-E9CD-4E9A-A679-46C7EBDE834F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5512DD-E9CD-4E9A-A679-46C7EBDE834F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5512DD-E9CD-4E9A-A679-46C7EBDE834F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{874E0D64-FB11-47D5-A588-B440CA3F24CA} = {8E7784FE-B147-42D2-91AB-D52F84CF23DE}
+		{8B71BF55-A574-4847-818B-5780216E644B} = {8E7784FE-B147-42D2-91AB-D52F84CF23DE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25ADBE6F-5939-47E8-8515-E0ABA064EBA9}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 12
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://devazure/product
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Interaction\\Interaction.csproj
+		SccProjectName1 = Interaction
+		SccLocalPath1 = Interaction
+		SccProjectUniqueName2 = Quiz\\Quiz.csproj
+		SccProjectName2 = Quiz
+		SccLocalPath2 = Quiz
+		SccProjectUniqueName3 = Callback\\Base\\Base.csproj
+		SccProjectTopLevelParentUniqueName3 = ClassroomTeaching.sln
+		SccProjectName3 = Callback/Base
+		SccLocalPath3 = Callback\\Base
+		SccProjectUniqueName4 = Callback\\WebAPI\\WebAPI.csproj
+		SccProjectTopLevelParentUniqueName4 = ClassroomTeaching.sln
+		SccProjectName4 = Callback/WebAPI
+		SccLocalPath4 = Callback\\WebAPI
+		SccProjectUniqueName5 = Screen\\Screen.csproj
+		SccProjectName5 = Screen
+		SccLocalPath5 = Screen
+		SccProjectUniqueName6 = Discussion\\Discussion.csproj
+		SccProjectName6 = Discussion
+		SccLocalPath6 = Discussion
+		SccProjectUniqueName7 = Cooperation\\Cooperation.csproj
+		SccProjectName7 = Cooperation
+		SccLocalPath7 = Cooperation
+		SccProjectUniqueName8 = Brainstorming\\Brainstorming.csproj
+		SccProjectName8 = Brainstorming
+		SccLocalPath8 = Brainstorming
+		SccProjectUniqueName9 = Authorization\\Authorization.csproj
+		SccProjectName9 = Authorization
+		SccLocalPath9 = Authorization
+		SccProjectUniqueName10 = LessonReport\\LessonReport.csproj
+		SccProjectName10 = LessonReport
+		SccLocalPath10 = LessonReport
+		SccProjectUniqueName11 = Custom\\Custom.csproj
+		SccProjectName11 = Custom
+		SccLocalPath11 = Custom
+	EndGlobalSection
+EndGlobal

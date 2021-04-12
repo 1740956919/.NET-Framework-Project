@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Translayer.ClassroomTeaching.Brainstorming TypeName="LINDGE.PARA.Translayer.ClassroomTeaching.Brainstorming.WebAPI.BrainstormingConfigSection,LINDGE.PARA.Translayer.ClassroomTeaching.Brainstorming.WebAPI"
+  deploy="true">
+    <DefaultStudentPortrait>C9\46F4\571908\439E832A55BDDC785647</DefaultStudentPortrait>
+  </Translayer.ClassroomTeaching.Brainstorming>
+  <ServiceRoute TypeName="LINDGE.PARA.ServiceRouteSection,LINDGE.PARA">
+    <RouteTable>
+    </RouteTable>
+  </ServiceRoute>
+  <EnvironmentVariable TypeName="LINDGE.PARA.Runtime.EnvironmentVariableTable,LINDGE.PARA.Runtime">
+  </EnvironmentVariable>
+  <Avatar.Session TypeName="LINDGE.PARA.Avatar.Session.SessionConfigSection,LINDGE.PARA.Avatar.Session">
+    <Id>LOCAL</Id>
+    <!--安装时，由安装脚本修改成指定的IP（需要修改安装脚本）-->
+    <Storage>redis://|SessionStorageServer|/1</Storage>
+    <MultiLogon>True</MultiLogon>
+    <ValidateSourceIP>True</ValidateSourceIP>
+    <RemoveFailedSession>False</RemoveFailedSession>
+    <Timeout>08:00:00</Timeout>
+  </Avatar.Session>
+  <Avatar.Impersonator TypeName="LINDGE.PARA.Fundamental.Avatar.Session.SDK.MockPrincipal,LINDGE.PARA.Fundamental.Avatar.Session.SDKK">
+    <ID>81F0E616-C8C4-4D61-9121-F2CD587AFD0E</ID>
+    <Role>User</Role>
+    <Attributes>
+      <NAME>Mock User</NAME>
+      <UNIT>
+      </UNIT>
+      <PORTRAIT>
+      </PORTRAIT>
+    </Attributes>
+  </Avatar.Impersonator>
+  <Avatar.Auth TypeName="LINDGE.PARA.Fundamental.Avatar.Session.SDK.AvatarAuthSection,LINDGE.PARA.Fundamental.Avatar.Session.SDK">
+    <CookieExpireDuration>1.00:00:00</CookieExpireDuration>
+  </Avatar.Auth>
+<Storage.LightingTable.NHibernate TypeName="LINDGE.PARA.Storage.LightingTable.NHibernate4.ConfigSection,LINDGE.PARA.Storage.LightingTable.NHibernate4">
+    <DataSource>server=|DatabaseServer|;database=LightingTable;uid=|DatabaseAdmin|;pwd=|DatabaseAdminPwd|</DataSource>
+  </Storage.LightingTable.NHibernate>
+</Configuration>

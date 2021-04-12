@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="LINDGE.PARA.Translayer.ClassroomTeaching.Interaction.WebAPI.WebApiApplication" Language="C#" %>
